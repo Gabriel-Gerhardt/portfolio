@@ -18,7 +18,7 @@ function Home() {
               href="https://www.linkedin.com/in/gabriel-gerhardt-0a8b852b9/"
               className="hover:underline"
             >
-              LinkedIn
+              Linkedin
             </a>
           </div>
         </div>
