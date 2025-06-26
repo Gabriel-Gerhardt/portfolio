@@ -58,7 +58,7 @@ function Home() {
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 text-center min-h-[500px] flex flex-col justify-center">
           <h2 className="text-3xl font-bold mb-4">Competências</h2>
           <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 text-base text-gray-700">
-            <li>React / JavaScript</li>
+            <li>React / JS</li>
             <li>Node.js / NestJS</li>
             <li>PostgreSQL / SQL</li>
             <li>Docker</li>
