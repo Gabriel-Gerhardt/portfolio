@@ -27,7 +27,7 @@ function Home() {
           </h2>
           <p className="text-lg">
             Olá! Meu nome é Gabriel, atualmente estou cursando engenharia de
-            software na PUCRS
+            software na PUCRS.
           </p>
         </div>
       </section>
