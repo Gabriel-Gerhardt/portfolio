@@ -94,12 +94,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <footer className="text-center py-6 bg-blue-600 text-white">
-        © {new Date().getFullYear()} Gabriel Gerhardt de Marque. Todos os
-        direitos reservados.
-      </footer>
     </div>
   );
 }
