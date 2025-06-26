@@ -1,83 +1,104 @@
 function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-800">
-      {/* Header */}
-      <header className="bg-blue-600 text-white p-6 shadow-md">
-        <div className="max-w-5xl mx-auto flex justify-between items-center">
+    <div className="min-h-screen bg-gray-100 text-gray-800 pt-20">
+      <header className="fixed top-0 left-0 w-full bg-purple-800 text-white h-20 px-8 shadow-md z-50">
+        <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
           <h1 className="text-2xl font-bold">Gabriel Gerhardt de Marque</h1>
-          <nav className="space-x-4">
-            <a href="#sobre" className="hover:underline">
-              Sobre
-            </a>
-            <a href="#projetos" className="hover:underline">
-              Projetos
-            </a>
-            <a href="#contato" className="hover:underline">
-              Contato
-            </a>
-          </nav>
-        </div>
-      </header>
-
-      {/* Seção Sobre */}
-      <section id="sobre" className="py-20 px-4 bg-gray-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-4">
-            Gabriel Gerhardt de Marque
-          </h2>
-          <p className="text-lg">
-            Olá! Meu nome é Gabriel, atualmente estou cursando engenharia de
-            software na PUCRS.
-          </p>
-        </div>
-      </section>
-
-      {/* Seção Projetos */}
-      <section id="projetos" className="py-20 px-4">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-semibold text-center mb-10">Projetos</h2>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {/* Card de Projeto */}
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <h3 className="text-xl font-bold mb-2">Projeto 1</h3>
-              <p className="text-gray-600">Descrição breve do projeto.</p>
-            </div>
-            {/* Replicar para outros projetos */}
-          </div>
-        </div>
-      </section>
-
-      {/* Seção Contato */}
-      <section id="contato" className="py-20 px-4 bg-gray-100">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-semibold mb-4">Contato</h2>
-          <p>Você pode me encontrar em:</p>
-          <div className="mt-4 space-x-4">
-            <a
-              href="mailto:email@exemplo.com"
-              className="text-blue-600 hover:underline"
-            >
+          <div className="flex gap-6 text-sm">
+            <a href="mailto:email@exemplo.com" className="hover:underline">
               Email
             </a>
             <a
-              href="https://github.com/seuusuario"
-              className="text-blue-600 hover:underline"
+              href="https://github.com/Gabriel-Gerhardt"
+              className="hover:underline"
             >
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/seuusuario"
-              className="text-blue-600 hover:underline"
+              href="https://www.linkedin.com/in/gabriel-gerhardt-0a8b852b9/"
+              className="hover:underline"
             >
               LinkedIn
             </a>
+          </div>
+        </div>
+      </header>
+      {/* Seção Sobre Mim */}
+      <section id="sobre" className="py-2 px-4">
+        <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 min-h-[500px]">
+          {/* Coluna da imagem */}
+          <div className="w-full md:w-1/3">
+            <img
+              src="/sua-foto.jpg"
+              alt="Gabriel Gerhardt de Marque"
+              className="w-full h-auto rounded-lg shadow"
+            />
+          </div>
+
+          {/* Coluna do texto */}
+          <div className="w-full md:w-2/3 text-justify">
+            <h2 className="text-3xl font-bold mb-4 text-center md:text-left">
+              Sobre Mim
+            </h2>
+            <p className="text-base leading-relaxed">
+              Olá! Meu nome é Gabriel, atualmente estou cursando Engenharia de
+              Software na PUCRS. Sou apaixonado por tecnologia, desenvolvimento
+              de software e aprendizado contínuo. Tenho experiência em projetos
+              acadêmicos, incluindo aplicações web com React, NestJS, banco de
+              dados relacionais e conteinerização com Docker. Busco
+              constantemente aprimorar minhas habilidades técnicas e contribuir
+              em projetos com impacto real.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Seção Competências */}
+      <section id="competencias" className="py-2 px-4">
+        <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 text-center min-h-[500px] flex flex-col justify-center">
+          <h2 className="text-3xl font-bold mb-4">Competências</h2>
+          <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 text-base text-gray-700">
+            <li>React / JavaScript</li>
+            <li>Node.js / NestJS</li>
+            <li>PostgreSQL / SQL</li>
+            <li>Docker</li>
+            <li>MongoDB</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Seção Projetos */}
+      <section id="projetos" className="py-2 px-4">
+        <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 min-h-[500px]">
+          <h2 className="text-3xl font-bold text-center mb-6">Projetos</h2>
+          <div className="flex flex-col gap-4">
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Projeto 1</h3>
+              <p className="text-gray-600 text-base leading-relaxed">
+                Descrição breve do projeto.
+              </p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Projeto 2</h3>
+              <p className="text-gray-600 text-base leading-relaxed">
+                Descrição breve do projeto.
+              </p>
+            </div>
+            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
+              <h3 className="text-xl font-bold mb-2">Projeto 3</h3>
+              <p className="text-gray-600 text-base leading-relaxed">
+                Descrição breve do projeto.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="text-center py-6 bg-blue-600 text-white">
-        © {new Date().getFullYear()} Seu Nome. Todos os direitos reservados.
+        © {new Date().getFullYear()} Gabriel Gerhardt de Marque. Todos os
+        direitos reservados.
       </footer>
     </div>
   );
