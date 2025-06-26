@@ -1,4 +1,4 @@
-name: Deploy React to GitHub Pages
+name: Deploy React/Vite to GitHub Pages
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: frontend
+        working-directory: frontend # Ajuste aqui para a pasta do seu React/Vite, ou remova essa linha se estiver na raiz
 
     steps:
       - name: Checkout código
@@ -32,5 +32,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
-          destination_dir: .
+          publish_dir: ./dist
