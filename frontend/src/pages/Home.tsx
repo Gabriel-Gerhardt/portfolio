@@ -45,9 +45,8 @@ function Home() {
               Software na PUCRS. Sou apaixonado por tecnologia, desenvolvimento
               de software e aprendizado contínuo. Tenho experiência em projetos
               acadêmicos, incluindo aplicações web com React, NestJS, banco de
-              dados relacionais e conteinerização com Docker. Busco
-              constantemente aprimorar minhas habilidades técnicas e contribuir
-              em projetos com impacto real.
+              dados e testing. Busco constantemente aprimorar minhas habilidades
+              técnicas e contribuir em projetos com impacto real.
             </p>
           </div>
         </div>
