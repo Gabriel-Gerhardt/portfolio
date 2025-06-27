@@ -74,22 +74,53 @@ function Home() {
           <h2 className="text-3xl font-bold text-center mb-6">Projetos</h2>
           <div className="flex flex-col gap-4">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">Projeto 1</h3>
+              <h3 className="text-xl font-bold mb-2">The Controller</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Descrição breve do projeto.
+                Ferramenta de linha de comando desenvolvida em Python com
+                Textual, que facilita a cópia, exclusão e movimentação de
+                arquivos e diretórios de forma simples e eficiente.
               </p>
+              <a
+                href="https://github.com/Gabriel-Gerhardt/The_Controller"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Repositório no GitHub
+              </a>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">Projeto 2</h3>
+              <h3 className="text-xl font-bold mb-2">FileMorph</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Descrição breve do projeto.
+                Aplicação web para conversão de arquivos entre diversos
+                formatos, incluindo DOCX, PDF e PAGES. Desenvolvido com React,
+                TailwindCSS e Golang (Gin), oferece interface amigável e
+                desempenho eficiente.
               </p>
+              <a
+                href="https://github.com/Gabriel-Gerhardt/FileMorph"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Repositório no GitHub
+              </a>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">Projeto 3</h3>
+              <h3 className="text-xl font-bold mb-2">Pong-game</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Descrição breve do projeto.
+                Jogo clássico Pong desenvolvido em Python usando Pygame,
+                projetado para entretenimento e aprendizado prático de
+                programação de jogos.
               </p>
+              <a
+                href="https://github.com/Gabriel-Gerhardt/pong_game"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                Repositório no GitHub
+              </a>
             </div>
           </div>
         </div>
