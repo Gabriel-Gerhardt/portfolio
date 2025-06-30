@@ -5,16 +5,25 @@ function Home() {
         <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
           <h1 className="text-2xl font-bold">Gabriel Gerhardt de Marque</h1>
           <div className="flex gap-6 text-sm">
-            <a href="mailto:email@exemplo.com" className="hover:underline">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="mailto:email@exemplo.com"
+              className="hover:underline"
+            >
               Email
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://github.com/Gabriel-Gerhardt"
               className="hover:underline"
             >
               GitHub
             </a>
             <a
+              target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/in/gabriel-gerhardt-0a8b852b9/"
               className="hover:underline"
             >
@@ -41,29 +50,69 @@ function Home() {
               Sobre Mim
             </h2>
             <p className="text-base leading-relaxed">
-              Olá! Meu nome é Gabriel, atualmente estou cursando Engenharia de
-              Software na PUCRS. Sou apaixonado por tecnologia, desenvolvimento
-              de software e aprendizado contínuo. Tenho experiência em projetos
-              acadêmicos, incluindo aplicações web com React, NestJS, banco de
-              dados e testing. Busco constantemente aprimorar minhas habilidades
-              técnicas e contribuir em projetos com impacto real.
+              Sou estudante de Engenharia de Software na PUCRS, apaixonado por
+              tecnologia e pela criação de soluções que combinam eficiência
+              técnica com impacto real. Tenho experiência prática com
+              desenvolvimento full stack, com ênfase em backend, atuando com
+              ferramentas modernas como React, NestJS, PostgreSQL, Golang e
+              MongoDB, além de familiaridade com boas práticas de versionamento,
+              documentação e testes.
+              <p>
+                Ao longo da graduação, participei de projetos interdisciplinares
+                com equipes multidisciplinares, onde desenvolvi não apenas
+                habilidades técnicas, e de pessoais — como liderança,
+                organização e comunicação clara.
+              </p>
+              Falo inglês fluentemente e espanhol em nível intermediário, o que
+              me permite colaborar com equipes internacionais. Estou em
+              constante evolução, buscando aprender, construir e contribuir com
+              projetos que façam diferença.
             </p>
           </div>
         </div>
       </section>
 
       {/* Seção Competências */}
-      <section id="competencias" className="py-2 px-4">
+      <section id="competencias" className="py-12 px-4">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 text-center min-h-[500px] flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-4">Competências</h2>
-          <ul className="grid gap-3 sm:grid-cols-2 md:grid-cols-3 text-base text-gray-700">
-            <li>React / JS</li>
-            <li>Node.js / NestJS</li>
-            <li>PostgreSQL / SQL</li>
-            <li>Docker</li>
-            <li>MongoDB</li>
-            <li>Git / GitHub</li>
-          </ul>
+          <h2 className="text-3xl font-bold mb-8">Competências</h2>
+
+          <div className="flex flex-col gap-12 text-left text-gray-700 items-center md:items-start">
+            {/* Interpessoais */}
+            <div className="w-full md:w-2/3">
+              <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+                Interpessoais
+              </h3>
+              <ul className="space-y-1 list-disc list-inside">
+                <li>Inglês fluente, espanhol intermediário</li>
+                <li>Trabalho em equipe, liderança</li>
+                <li>Organização, Adaptabilidade</li>
+              </ul>
+            </div>
+
+            {/* Técnicas */}
+            <div className="w-full md:w-2/3">
+              <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
+                Técnicas
+              </h3>
+              <ul className="space-y-1 list-disc list-inside">
+                <li>
+                  Desenvolvimento web (Frontend): HTML, CSS, Javascript, React
+                </li>
+                <li>
+                  Desenvolvimento web (Backend): Golang (Gin), Node.js, Nest.js
+                </li>
+                <li>Banco de dados: PostgreSQL, OracleSQL, MongoDB, Prisma</li>
+                <li>
+                  Linguagens de programação: Javascript, Java, Python, C++, C e
+                  Go
+                </li>
+                <li>
+                  Ferramentas: Git, Github, LaTeX, Microsoft Office, Docker
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
