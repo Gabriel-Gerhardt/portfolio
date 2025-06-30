@@ -1,3 +1,5 @@
+import minhaFoto from "../assets/eu.jpeg"; // ajuste o caminho conforme necessário
+
 function Home() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 pt-20">
@@ -38,9 +40,9 @@ function Home() {
           {/* Coluna da imagem */}
           <div className="w-full md:w-1/3">
             <img
-              src="/sua-foto.jpg"
+              src={minhaFoto}
               alt="Gabriel Gerhardt de Marque"
-              className="w-full h-auto rounded-lg shadow"
+              className="w-96 h-96 rounded-full object-cover shadow mx-auto"
             />
           </div>
 
