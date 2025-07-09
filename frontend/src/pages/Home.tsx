@@ -1,4 +1,4 @@
-import minhaFoto from "../assets/eu.jpeg"; // ajuste o caminho conforme necessário
+import minhaFoto from "../assets/eu2.jpeg"; // ajuste o caminho conforme necessário
 
 function Home() {
   return (
