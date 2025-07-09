@@ -98,16 +98,14 @@ function Home() {
                 Técnicas
               </h3>
               <ul className="space-y-1 list-disc list-inside">
-                <li>
-                  Desenvolvimento web (Frontend): HTML, CSS, Javascript, React
-                </li>
+                <li>Desenvolvimento web (Frontend): HTML5, CSS3, React</li>
                 <li>
                   Desenvolvimento web (Backend): Golang (Gin), Node.js, Nest.js
                 </li>
                 <li>Banco de dados: PostgreSQL, OracleSQL, MongoDB, Prisma</li>
                 <li>
-                  Linguagens de programação: Javascript, Java, Python, C++, C e
-                  Go
+                  Linguagens de programação: Javascript/Typescript, Java,
+                  Python, C++, C e Go
                 </li>
                 <li>
                   Ferramentas: Git, Github, LaTeX, Microsoft Office, Docker
