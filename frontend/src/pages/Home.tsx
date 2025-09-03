@@ -92,15 +92,21 @@ function Home() {
             <p className="text-base leading-relaxed">
               Hi, I'm a Software Engineering student at PUCRS, passionate about
               technology and creating solutions that combine technical
-              efficiency with real-world impact...
+              efficiency with real-world impact. I have hands-on experience with
+              full stack development, with a focus on backend, working with
+              modern tools such as React, NestJS, PostgreSQL, Golang, and
+              MongoDB. I’m also familiar with best practices in version control,
+              documentation, and testing.
             </p>
             <p className="text-base leading-relaxed mt-4">
               Throughout my degree, I have taken part in interdisciplinary
-              projects with multidisciplinary teams, developing technical and
-              interpersonal skills...
+              projects with multidisciplinary teams, where I developed not only
+              technical skills but also interpersonal ones — such as leadership,
+              organization, and clear communication.
             </p>
             <p className="text-base leading-relaxed mt-4">
-              I am fluent in English, constantly evolving, learning, building,
+              I am fluent in English, which allows me to collaborate with
+              international teams. I am constantly evolving, learning, building,
               and contributing to projects that make a difference.
             </p>
           </div>
