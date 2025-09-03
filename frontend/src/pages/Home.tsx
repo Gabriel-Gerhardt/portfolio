@@ -49,26 +49,27 @@ function Home() {
           {/* Coluna do texto */}
           <div className="w-full md:w-2/3 text-justify">
             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">
-              Sobre Mim
+              About Me
             </h2>
             <p className="text-base leading-relaxed">
-              Sou estudante de Engenharia de Software na PUCRS, apaixonado por
-              tecnologia e pela criação de soluções que combinam eficiência
-              técnica com impacto real. Tenho experiência prática com
-              desenvolvimento full stack, com ênfase em backend, atuando com
-              ferramentas modernas como React, NestJS, PostgreSQL, Golang e
-              MongoDB, além de familiaridade com boas práticas de versionamento,
-              documentação e testes.
-              <p>
-                Ao longo da graduação, participei de projetos interdisciplinares
-                com equipes multidisciplinares, onde desenvolvi não apenas
-                habilidades técnicas, e de pessoais — como liderança,
-                organização e comunicação clara.
-              </p>
-              Falo inglês fluentemente e espanhol em nível intermediário, o que
-              me permite colaborar com equipes internacionais. Estou em
-              constante evolução, buscando aprender, construir e contribuir com
-              projetos que façam diferença.
+              Hi, I'm a Software Engineering student at PUCRS, passionate about
+              technology and creating solutions that combine technical
+              efficiency with real-world impact. I have hands-on experience with
+              full stack development, with a focus on backend, working with
+              modern tools such as React, NestJS, PostgreSQL, Golang, and
+              MongoDB. I’m also familiar with best practices in version control,
+              documentation, and testing.
+            </p>
+            <p className="text-base leading-relaxed mt-4">
+              Throughout my degree, I have taken part in interdisciplinary
+              projects with multidisciplinary teams, where I developed not only
+              technical skills but also interpersonal ones — such as leadership,
+              organization, and clear communication.
+            </p>
+            <p className="text-base leading-relaxed mt-4">
+              I am fluent in English, which allows me to collaborate with
+              international teams. I am constantly evolving, learning, building,
+              and contributing to projects that make a difference.
             </p>
           </div>
         </div>
@@ -77,39 +78,40 @@ function Home() {
       {/* Seção Competências */}
       <section id="competencias" className="py-12 px-4">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 text-center min-h-[500px] flex flex-col justify-center">
-          <h2 className="text-3xl font-bold mb-8">Competências</h2>
+          <h2 className="text-3xl font-bold mb-8">Skills</h2>
 
           <div className="flex flex-col gap-12 text-left text-gray-700 items-center md:items-start">
             {/* Interpessoais */}
             <div className="w-full md:w-2/3">
               <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
-                Interpessoais
+                Interpersonal
               </h3>
               <ul className="space-y-1 list-disc list-inside">
-                <li>Inglês fluente, espanhol intermediário</li>
-                <li>Trabalho em equipe, liderança</li>
-                <li>Organização, Adaptabilidade</li>
+                <li>Fluent English</li>
+                <li>Teamwork, Leadership</li>
+                <li>Organization, Adapatability</li>
               </ul>
             </div>
 
             {/* Técnicas */}
             <div className="w-full md:w-2/3">
               <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
-                Técnicas
+                Technical
               </h3>
               <ul className="space-y-1 list-disc list-inside">
-                <li>Desenvolvimento web (Frontend): HTML5, CSS3, React</li>
                 <li>
-                  Desenvolvimento web (Backend): Golang (Gin), Node.js, Nest.js
-                </li>
-                <li>Banco de dados: PostgreSQL, OracleSQL, MongoDB, Prisma</li>
-                <li>
-                  Linguagens de programação: Javascript/Typescript, Java,
-                  Python, C++, C e Go
+                  Web Development (Frontend): HTML5, CSS3, React, TailwindCSS
                 </li>
                 <li>
-                  Ferramentas: Git, Github, LaTeX, Microsoft Office, Docker
+                  Web Development (Backend): Golang (Gin), Node.js, Nest.js,
+                  Spring Boot
                 </li>
+                <li>Databases: PostgreSQL, OracleSQL, MongoDB, Prisma</li>
+                <li>
+                  Programming Languages: Javascript/Typescript, Java, Python,
+                  C++, C e Go
+                </li>
+                <li>Tools: Git, Github, LaTeX, Microsoft Office, Docker</li>
               </ul>
             </div>
           </div>
@@ -119,14 +121,14 @@ function Home() {
       {/* Seção Projetos */}
       <section id="projetos" className="py-2 px-4">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 min-h-[500px]">
-          <h2 className="text-3xl font-bold text-center mb-6">Projetos</h2>
-          <div className="flex flex-col gap-4">
+          <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
+          <div className="flex flex-row gap-4">
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-bold mb-2">The Controller</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Ferramenta de linha de comando desenvolvida em Python com
-                Textual, que facilita a cópia, exclusão e movimentação de
-                arquivos e diretórios de forma simples e eficiente.
+                Command Line tool written in Python with Textual which
+                facilitates the copy, delete and move of files and directories
+                in a simple and efficient way.
               </p>
               <a
                 href="https://github.com/Gabriel-Gerhardt/The_Controller"
@@ -134,16 +136,14 @@ function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                Repositório no GitHub
+                GitHub Repository
               </a>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-bold mb-2">FileMorph</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Aplicação web para conversão de arquivos entre diversos
-                formatos, incluindo DOCX, PDF e PAGES. Desenvolvido com React,
-                TailwindCSS e Golang (Gin), oferece interface amigável e
-                desempenho eficiente.
+                Web aplication for archive conversion em many formats, including
+                DOCX, PDF and PAGES. Writen in Golang(Gin) and React.
               </p>
               <a
                 href="https://github.com/Gabriel-Gerhardt/FileMorph"
@@ -151,15 +151,14 @@ function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                Repositório no GitHub
+                GitHub Repository
               </a>
             </div>
             <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
               <h3 className="text-xl font-bold mb-2">Pong-game</h3>
               <p className="text-gray-600 text-base leading-relaxed">
-                Jogo clássico Pong desenvolvido em Python usando Pygame,
-                projetado para entretenimento e aprendizado prático de
-                programação de jogos.
+                Classic Pong game developed in Python using Pygame, used to
+                understand the basics of game development.
               </p>
               <a
                 href="https://github.com/Gabriel-Gerhardt/pong_game"
@@ -167,7 +166,7 @@ function Home() {
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline"
               >
-                Repositório no GitHub
+                GitHub Repository
               </a>
             </div>
           </div>
