@@ -1,8 +1,41 @@
-import minhaFoto from "../assets/eu2.jpeg"; // ajuste o caminho conforme necessário
+import minhaFoto from "../assets/eu2.jpeg";
+import { useState } from "react";
+
+const projects = [
+  {
+    title: "The Controller",
+    description:
+      "Command Line tool written in Python with Textual which facilitates the copy, delete and move of files and directories in a simple and efficient way.",
+    link: "https://github.com/Gabriel-Gerhardt/The_Controller",
+  },
+  {
+    title: "FileMorph",
+    description:
+      "Web application for archive conversion in many formats, including DOCX, PDF and PAGES. Written in Golang(Gin) and React.",
+    link: "https://github.com/Gabriel-Gerhardt/FileMorph",
+  },
+  {
+    title: "Pong-game",
+    description:
+      "Classic Pong game developed in Python using Pygame, used to understand the basics of game development.",
+    link: "https://github.com/Gabriel-Gerhardt/pong_game",
+  },
+];
 
 function Home() {
+  const [clickedLinks, setClickedLinks] = useState(
+    Array(projects.length).fill(false),
+  );
+
+  const handleClick = (index) => {
+    const newClicked = [...clickedLinks];
+    newClicked[index] = true;
+    setClickedLinks(newClicked);
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 text-gray-800 pt-20">
+      {/* Header */}
       <header className="fixed top-0 left-0 w-full bg-purple-800 text-white h-20 px-8 shadow-md z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
           <h1 className="text-2xl font-bold">Gabriel Gerhardt de Marque</h1>
@@ -34,10 +67,10 @@ function Home() {
           </div>
         </div>
       </header>
-      {/* Seção Sobre Mim */}
-      <section id="sobre" className="py-2 px-4">
+
+      {/* Sobre Mim */}
+      <section id="sobre" className="py-2 px-4 mt-28">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 flex flex-col md:flex-row items-center gap-8 min-h-[500px]">
-          {/* Coluna da imagem */}
           <div className="w-full md:w-1/3">
             <img
               src={minhaFoto}
@@ -45,8 +78,6 @@ function Home() {
               className="w-96 h-96 rounded-full object-cover shadow mx-auto"
             />
           </div>
-
-          {/* Coluna do texto */}
           <div className="w-full md:w-2/3 text-justify">
             <h2 className="text-3xl font-bold mb-4 text-center md:text-left">
               About Me
@@ -75,13 +106,11 @@ function Home() {
         </div>
       </section>
 
-      {/* Seção Competências */}
+      {/* Competências */}
       <section id="competencias" className="py-12 px-4">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 text-center min-h-[500px] flex flex-col justify-center">
           <h2 className="text-3xl font-bold mb-8">Skills</h2>
-
           <div className="flex flex-col gap-12 text-left text-gray-700 items-center md:items-start">
-            {/* Interpessoais */}
             <div className="w-full md:w-2/3">
               <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
                 Interpersonal
@@ -89,11 +118,9 @@ function Home() {
               <ul className="space-y-1 list-disc list-inside">
                 <li>Fluent English</li>
                 <li>Teamwork, Leadership</li>
-                <li>Organization, Adapatability</li>
+                <li>Organization, Adaptability</li>
               </ul>
             </div>
-
-            {/* Técnicas */}
             <div className="w-full md:w-2/3">
               <h3 className="text-xl font-semibold mb-4 text-center md:text-left">
                 Technical
@@ -118,57 +145,31 @@ function Home() {
         </div>
       </section>
 
-      {/* Seção Projetos */}
+      {/* Projetos */}
       <section id="projetos" className="py-2 px-4">
         <div className="max-w-7xl mx-auto bg-white shadow-md rounded-xl p-8 min-h-[500px]">
           <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
-          <div className="flex flex-row gap-4">
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">The Controller</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Command Line tool written in Python with Textual which
-                facilitates the copy, delete and move of files and directories
-                in a simple and efficient way.
-              </p>
-              <a
-                href="https://github.com/Gabriel-Gerhardt/The_Controller"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
+          <div className="flex flex-row gap-4 flex-wrap justify-center">
+            {projects.map((proj, index) => (
+              <div
+                key={index}
+                className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm w-80"
               >
-                GitHub Repository
-              </a>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">FileMorph</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Web aplication for archive conversion em many formats, including
-                DOCX, PDF and PAGES. Writen in Golang(Gin) and React.
-              </p>
-              <a
-                href="https://github.com/Gabriel-Gerhardt/FileMorph"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                GitHub Repository
-              </a>
-            </div>
-            <div className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm">
-              <h3 className="text-xl font-bold mb-2">Pong-game</h3>
-              <p className="text-gray-600 text-base leading-relaxed">
-                Classic Pong game developed in Python using Pygame, used to
-                understand the basics of game development.
-              </p>
-              <a
-                href="https://github.com/Gabriel-Gerhardt/pong_game"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-600 hover:underline"
-              >
-                GitHub Repository
-              </a>
-            </div>
+                <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
+                <p className="text-gray-600 text-base leading-relaxed mb-2">
+                  {proj.description}
+                </p>
+                <a
+                  onClick={() => handleClick(index)}
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`hover:underline ${clickedLinks[index] ? "text-purple-800" : "text-blue-600"}`}
+                >
+                  GitHub Repository
+                </a>
+              </div>
+            ))}
           </div>
         </div>
       </section>
