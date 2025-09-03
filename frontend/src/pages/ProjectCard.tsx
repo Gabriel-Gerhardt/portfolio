@@ -17,3 +17,4 @@ function ProjectCard({ project, index, clicked, onClick }) {
     </div>
   );
 }
+export default ProjectCard;

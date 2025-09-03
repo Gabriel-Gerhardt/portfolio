@@ -1,7 +1,14 @@
 import minhaFoto from "../assets/eu2.jpeg";
 import { useState } from "react";
+import ProjectCard from "./ProjectCard";
 
-const projects = [
+interface Project {
+  title: string;
+  description: string;
+  link: string;
+}
+
+const projects: Project[] = [
   {
     title: "The Controller",
     description:
@@ -27,7 +34,7 @@ function Home() {
     Array(projects.length).fill(false),
   );
 
-  const handleClick = (index) => {
+  const handleClick = (index: number) => {
     const newClicked = [...clickedLinks];
     newClicked[index] = true;
     setClickedLinks(newClicked);
@@ -85,21 +92,15 @@ function Home() {
             <p className="text-base leading-relaxed">
               Hi, I'm a Software Engineering student at PUCRS, passionate about
               technology and creating solutions that combine technical
-              efficiency with real-world impact. I have hands-on experience with
-              full stack development, with a focus on backend, working with
-              modern tools such as React, NestJS, PostgreSQL, Golang, and
-              MongoDB. I’m also familiar with best practices in version control,
-              documentation, and testing.
+              efficiency with real-world impact...
             </p>
             <p className="text-base leading-relaxed mt-4">
               Throughout my degree, I have taken part in interdisciplinary
-              projects with multidisciplinary teams, where I developed not only
-              technical skills but also interpersonal ones — such as leadership,
-              organization, and clear communication.
+              projects with multidisciplinary teams, developing technical and
+              interpersonal skills...
             </p>
             <p className="text-base leading-relaxed mt-4">
-              I am fluent in English, which allows me to collaborate with
-              international teams. I am constantly evolving, learning, building,
+              I am fluent in English, constantly evolving, learning, building,
               and contributing to projects that make a difference.
             </p>
           </div>
@@ -151,24 +152,13 @@ function Home() {
           <h2 className="text-3xl font-bold text-center mb-6">Projects</h2>
           <div className="flex flex-row gap-4 flex-wrap justify-center">
             {projects.map((proj, index) => (
-              <div
+              <ProjectCard
                 key={index}
-                className="bg-gray-50 border border-gray-200 rounded-lg p-6 shadow-sm w-80"
-              >
-                <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
-                <p className="text-gray-600 text-base leading-relaxed mb-2">
-                  {proj.description}
-                </p>
-                <a
-                  onClick={() => handleClick(index)}
-                  href={proj.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`hover:underline ${clickedLinks[index] ? "text-purple-800" : "text-blue-600"}`}
-                >
-                  GitHub Repository
-                </a>
-              </div>
+                project={proj}
+                index={index}
+                clicked={clickedLinks[index]}
+                onClick={() => handleClick(index)}
+              />
             ))}
           </div>
         </div>
