@@ -10,23 +10,11 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "The Controller",
+    title: "Webhook-Manager",
     description:
-      "Command Line tool written in Python with Textual which facilitates the copy, delete and move of files and directories in a simple and efficient way.",
-    link: "https://github.com/Gabriel-Gerhardt/The_Controller",
-  },
-  {
-    title: "FileMorph",
-    description:
-      "Web application for archive conversion in many formats, including DOCX, PDF and PAGES. Written in Golang(Gin) and React.",
-    link: "https://github.com/Gabriel-Gerhardt/FileMorph",
-  },
-  {
-    title: "Pong-game",
-    description:
-      "Classic Pong game developed in Python using Pygame, used to understand the basics of game development.",
-    link: "https://github.com/Gabriel-Gerhardt/pong_game",
-  },
+      "A centralized webhook system that allows services to emit events and clients to subscribe URLs to those events, automatically delivering payloads when events occur.",
+    link: "https://github.com/Gabriel-Gerhardt/Webhook-Manager",
+  }
 ];
 
 function Home() {
@@ -93,10 +81,9 @@ function Home() {
               Hi, I'm a Software Engineering student at PUCRS, passionate about
               technology and creating solutions that combine technical
               efficiency with real-world impact. I have hands-on experience with
-              full stack development, with a focus on backend, working with
-              modern tools such as React, NestJS, PostgreSQL, Golang, and
-              MongoDB. I’m also familiar with best practices in version control,
-              documentation, and testing.
+              backend development, working with modern tools such as Java, Spring Boot, 
+              PostgreSQL, OracleDB and Nifi. I’m also familiar with best practices in version control,
+              documentation with UML and C4, testing and software design patterns
             </p>
             <p className="text-base leading-relaxed mt-4">
               Throughout my degree, I have taken part in interdisciplinary
@@ -134,18 +121,18 @@ function Home() {
               </h3>
               <ul className="space-y-1 list-disc list-inside">
                 <li>
-                  Web Development (Frontend): HTML5, CSS3, React, TailwindCSS
+                 Backend: Gin(Goland), Node.js, Nest.js,
+                  Spring Boot, FastAPI
                 </li>
-                <li>
-                  Web Development (Backend): Golang (Gin), Node.js, Nest.js,
-                  Spring Boot
-                </li>
-                <li>Databases: PostgreSQL, OracleSQL, MongoDB, Prisma</li>
+                <li>Databases: PostgreSQL, OracleSQL, MySQL, MongoDB</li>
                 <li>
                   Programming Languages: Javascript/Typescript, Java, Python,
-                  C++, C e Go
+                  C++, C, Go
                 </li>
-                <li>Tools: Git, Github, LaTeX, Microsoft Office, Docker</li>
+                <li>
+                  Tools: Git, Github, Docker, UML, Sonarqube
+                </li>
+                <li>Extras: Microsoft Office, Teams</li>
               </ul>
             </div>
           </div>
