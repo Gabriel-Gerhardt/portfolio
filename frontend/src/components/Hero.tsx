@@ -1,3 +1,5 @@
+import heroPhoto from "../assets/gabriel-hero.jpg";
+
 function Hero() {
   return (
     <section
@@ -8,18 +10,27 @@ function Hero() {
       }}
     >
       <div className="w-full max-w-[900px]">
-        <div className="mb-7 font-mono text-[13px] tracking-[1.5px] text-accent uppercase">
-          Gabriel Gerhardt de Marque · Porto Alegre, Brazil
+        <div className="mb-10 flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between md:gap-12">
+          <div className="min-w-0 md:flex-1">
+            <div className="mb-7 font-mono text-[13px] tracking-[1.5px] text-accent uppercase">
+              Gabriel Gerhardt de Marque · Porto Alegre, Brazil
+            </div>
+            <h1 className="mb-7 font-serif text-[38px] leading-[1.1] font-semibold md:text-[64px]">
+              Distributed systems,
+              <br />
+              built for <span className="text-accent">search</span>.
+            </h1>
+            <p className="max-w-[640px] font-serif text-[20px] leading-[1.6] text-muted">
+              Java backend with real depth in distributed systems,
+              event-driven architecture, and information retrieval.
+            </p>
+          </div>
+          <img
+            src={heroPhoto}
+            alt="Gabriel Gerhardt de Marque"
+            className="h-[220px] w-[176px] shrink-0 self-center border border-ink object-cover md:h-[240px] md:w-[192px] md:self-start"
+          />
         </div>
-        <h1 className="mb-7 font-serif text-[38px] leading-[1.1] font-semibold md:text-[64px]">
-          Distributed systems,
-          <br />
-          built for <span className="text-accent">search</span>.
-        </h1>
-        <p className="mb-10 max-w-[640px] font-serif text-[20px] leading-[1.6] text-muted">
-          Java backend with real depth in distributed systems, event-driven
-          architecture, and information retrieval.
-        </p>
         <div className="mb-12 font-mono text-[14px] tracking-[0.5px] text-muted2">
           Java · Spring Boot · Kafka · Elasticsearch · Event-Driven Systems
         </div>
